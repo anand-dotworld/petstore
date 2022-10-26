@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "b75ad733-7944-4aa2-90a2-62aa437c7c3f",
+		"_postman_id": "8bdff996-30fe-4a75-a758-753d08550878",
 		"name": "Petstore",
 		"description": "Buy or rent spacecrafts",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -8,7 +8,7 @@
 	"item": [
 		{
 			"name": "Read a spacecraft",
-			"id": "43b2459a-a203-4f2d-82a5-4a9ff106c042",
+			"id": "b3fce0af-6d8d-4963-a15f-5f330c311fb5",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -31,7 +31,6 @@
 					],
 					"variable": [
 						{
-							"id": "95364c9b-2104-4e67-aefd-d34eecdc888a",
 							"key": "spacecraftId",
 							"value": "<string>",
 							"description": "(Required) The unique identifier of the spacecraft"
@@ -41,7 +40,7 @@
 			},
 			"response": [
 				{
-					"id": "25986f7a-844a-40b1-96d5-3be419b3687a",
+					"id": "b7a060d3-af45-4e78-a328-4128c6b3f647",
 					"name": "The spacecraft corresponding to the provided `spacecraftId`",
 					"originalRequest": {
 						"method": "GET",
@@ -53,11 +52,9 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
-							"host": [
-								"{{baseUrl}}"
-							],
+							"raw": "//spacecrafts/:spacecraftId",
 							"path": [
+								"",
 								"spacecrafts",
 								":spacecraftId"
 							],
@@ -76,15 +73,16 @@
 					"header": [
 						{
 							"key": "Content-Type",
-							"value": "application/json"
+							"value": "application/json",
+							"enabled": true
 						}
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n  \"id\": \"laboris sint ullamco\",\n  \"name\": \"irure\",\n  \"type\": \"spaceplane\",\n  \"description\": \"sit \"\n}"
+					"body": "{\n  \"id\": \"Demooooo\"\n}"
 				},
 				{
-					"id": "444bb678-7144-4201-bc5e-bc0782470d34",
+					"id": "27ba9305-598b-4388-b008-27b8bef1e0b7",
 					"name": "No spacecraft found for the provided `spacecraftId`",
 					"originalRequest": {
 						"method": "GET",
@@ -119,15 +117,16 @@
 					"header": [
 						{
 							"key": "Content-Type",
-							"value": "application/json"
+							"value": "application/json",
+							"enabled": true
 						}
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n  \"message\": \"labore dolore ad elit\"\n}"
+					"body": "{\n  \"message\": \"in in sed\"\n}"
 				},
 				{
-					"id": "e9d6c279-9fdf-428a-9136-b138e215c9c4",
+					"id": "f1e7fbc9-701a-472c-a375-fca0cbae798a",
 					"name": "Unexpected error",
 					"originalRequest": {
 						"method": "GET",
@@ -162,32 +161,23 @@
 					"header": [
 						{
 							"key": "Content-Type",
-							"value": "application/json"
+							"value": "application/json",
+							"enabled": true
 						}
 					],
 					"cookie": [],
 					"responseTime": null,
-					"body": "{\n  \"message\": \"labore dolore ad elit\"\n}"
+					"body": "{\n  \"message\": \"in in sed\"\n}"
+				}
+			],
+			"variable": [
+				{
+					"id": "21a4487a-e97d-40cc-984e-32c2fbf9af84",
+					"key": "spacecraftId",
+					"value": "<string>",
+					"description": "(Required) The unique identifier of the spacecraft"
 				}
 			]
-		},
-		{
-			"name": "Demo Request",
-			"id": "b13d36a6-d9a8-4495-8dc8-093cb6defa90",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "/demo",
-					"path": [
-						"demo"
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"auth": {
@@ -212,10 +202,9 @@
 	},
 	"variable": [
 		{
-			"id": "2fb4e6d1-7087-4a43-8516-732ddefbdaea",
+			"id": "b0518ffd-1500-4937-ba24-78e60468b064",
 			"key": "baseUrl",
-			"value": "/",
-			"type": "string"
+			"value": "/"
 		}
 	]
 }
